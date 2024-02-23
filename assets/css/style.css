@@ -60,7 +60,7 @@ a:visited {
     font-family: sans-serif;
     font-weight: 600;
     text-decoration: none;
-    padding:  20px;
+    padding: 33.2px;
 
     background-color: #D6E9FE;
     border-color: #D6E9FE;
@@ -72,8 +72,7 @@ a:visited {
 }
 
 .btn-about-me:hover {
-    background-color: #cadcf0ac;
-    color: white;
+    background-color: #cadcf0ac;;
     cursor: pointer;
 }
 
@@ -86,6 +85,7 @@ a:visited {
     font-family: sans-serif;
     font-weight: 600;
     text-decoration: none;
+    padding: 33.2px;
 
     background-color: #D6E9FE;
     border-color: #D6E9FE;
@@ -98,7 +98,6 @@ a:visited {
 
 .btn-contacts:hover {
     background-color: #cadcf0ac;
-    color: white;
     cursor: pointer;
 }
 
@@ -163,8 +162,8 @@ main {
 .progress-bar {
     position: relative;
     width: 500px;
-    height: 10px;
-    background-color: none;
+    padding: 12px;
+    background-color: #c5d6e9;
     border-radius: 1px;
     color: white;
 }
@@ -174,12 +173,12 @@ main {
     display: flex;
     align-items: center;
     position: absolute;
-    left: .5em;
-    top: .5em;
+    left: .1em;
+    top: .1em;
     bottom: .5em;
     width: calc(var(--width, 0) * 1%);
     min-width: 2rem;
-    max-width: calc(100% - 1em);
+    max-width: calc(80% - 1em);
     background-color: #D6E9FE;
     border-radius: 2px;
     padding: 10px;
@@ -188,7 +187,7 @@ main {
 /*Footer*/
 footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #D6E9FE;
     padding: 40px 0 30px;
