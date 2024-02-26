@@ -7,11 +7,14 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 1200px;
+    height: 2000px;
     font-size: 18px;
     font-family: sans-serif;
-    background-color: rgba(255, 255, 255, 0.869);
+    background-color: rgba(0, 0, 0, 0.684);
 }
 
 
@@ -19,7 +22,7 @@ body {
 header {
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 
     font-size: 18px;
@@ -28,7 +31,8 @@ header {
 
     width: 100%;
     padding: 20px;
-    background: #D6E9FE;
+    background: #AF8F783b;
+    color: white;
     box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.15);
 }
 
@@ -40,7 +44,7 @@ header>ul>li>button>a {
 
 header>ul>li>button>a:link,
 a:visited {
-    color: #262626;
+    color: white;
     text-decoration: none;
 }
 
@@ -62,21 +66,24 @@ a:visited {
     text-decoration: none;
     padding: 33.2px;
 
-    background-color: #D6E9FE;
-    border-color: #D6E9FE;
+    color: white;
+    background-color: none;
+    border-color: none;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     height: 90px;
     width: 150px;
     margin: -50px -50px -20px 0;
 }
 
 .btn-about-me:hover {
-    background-color: #cadcf0ac;;
+    color: white;
+    background-color: #af8f7833;
     cursor: pointer;
 }
 
 .btn-about-me:active {
+    color: white;
     opacity: 0.7;
 }
 
@@ -87,23 +94,55 @@ a:visited {
     text-decoration: none;
     padding: 33.2px;
 
-    background-color: #D6E9FE;
-    border-color: #D6E9FE;
+    color: white;
+    background-color: none;
+    border-color: none;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     height: 90px;
     width: 150px;
     margin: -50px -70px -20px -55px;
 }
 
 .btn-contacts:hover {
-    background-color: #cadcf0ac;
+    color: white;
+    background-color: #af8f7833;
     cursor: pointer;
 }
 
 .btn-contacts:active {
+    color: white;
     opacity: 0.7;
 }
+
+.btn-cv {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 33.2px 50px;
+
+    color: white;
+    background-color: none;
+    border-color: none;
+    border-style: solid;
+    border-width: 0px;
+    height: 90px;
+    width: 150px;
+    margin: -50px -70px -20px -30px;
+}
+
+.btn-cv:hover {
+    color: white;
+    background-color: #af8f7833;
+    cursor: pointer;
+}
+
+.btn-cv:active {
+    color: white;
+    opacity: 0.7;
+}
+
 
 
 /*Header Logo*/
@@ -111,12 +150,43 @@ a:visited {
     margin-top: 5px;
 }
 
+.logo-img {
+    margin-left: 40px;
+}
+
+/*Image Background*/
+.background-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0);
+    z-index: -99;
+    filter: blur(2px);
+}
+
+.color-overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: opacity(35%) blur(2px);
+    z-index: -98;
+
+}
+
 
 /*Main*/
-main {
+.main {
     display: flex;
     justify-content: space-evenly;
     margin-top: 200px;
+    margin-bottom: 187px;
+    color: white;
 }
 
 .main-text {
@@ -150,45 +220,116 @@ main {
     right: 0;
 }
 
+/*Progresssbar*/
 
-/*Container 1*/
-
-.container-1 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 200px;
-}
-
-.progress-bar {
-    position: relative;
-    width: 500px;
-    padding: 12px;
-    background-color: #c5d6e9;
-    border-radius: 1px;
+.sub-title {
     color: white;
+    font-weight: 100;
+    margin-top: 300px;
 }
 
-.progress-bar::before {
-    content: attr(data-label);
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: .1em;
-    top: .1em;
-    bottom: .5em;
-    width: calc(var(--width, 0) * 1%);
-    min-width: 2rem;
-    max-width: calc(80% - 1em);
-    background-color: #D6E9FE;
-    border-radius: 2px;
-    padding: 10px;
+.container-skills {
+    margin-top: 200px;
+    max-width: 500px;
+    width: 100%;
+    margin: 15px 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
 }
+
+.container-skills .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background: #AF8F78;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.creativity {
+    width: 80%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.problem-solving {
+    width: 100%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.html {
+    width: 90%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.css {
+    width: 90%;
+    animation-delay: 0.2s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #2e608e;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #2e608e;
+    transform: translateX(-50%) rotate(45deg);
+}
+
 
 /*Footer*/
+
 footer {
+    margin-top: auto;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: #D6E9FE;
-    padding: 40px 0 30px;
+    padding: 70px 30px 20px;
+    background-color: #7f7f7f;
 }

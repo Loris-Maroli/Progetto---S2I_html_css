@@ -65,7 +65,7 @@ function resetVelocity(point, axis, dir) {
 function drawCircle(x, y) {
     context.beginPath();
     context.arc(x, y, radius, 0, 2 * Math.PI, false);
-    context.fillStyle = '#97badc';
+    context.fillStyle = '#ffffff';
     context.fill();
 }
 
@@ -73,7 +73,7 @@ function drawLine(x1, y1, x2, y2) {
     context.beginPath();
     context.moveTo(x1, y1);
     context.lineTo(x2, y2);
-    context.strokeStyle = '#8ab2d8'
+    context.strokeStyle = '#ffffff95'
     context.stroke();
 }
 
@@ -108,16 +108,6 @@ function animate() {
 
 
 
-
-
-// Progress Bar 1
-
-const progressBar = document.getElementsByClassName('progress-bar')[0]
-setInterval(() => {
-    const computedStyle = getComputedStyle(progressBar)
-    const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
-    progressBar.style.setProperty('--width', width + .1)
-}, 5)
 
 
 

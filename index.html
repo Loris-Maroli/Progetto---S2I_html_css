@@ -11,34 +11,76 @@
 
 <body>
     <header>
-        <div class="nav-logo"><img src="./assets/img/Logo-loris-maroli-2.svg" alt=""></div>
+        <div class="nav-logo"><img class="logo-img" src="./assets/img/Logo-Loris-Maroli-bianco.svg" alt=""></div>
         <ul class="menu">
             <li><a href="./about-me.html" class="btn-about-me">About me</a></button></li>
             <li><a href="./contacts.html" class="btn-contacts">Contact</a></button></li>
+            <li><a href="./CV.html" class="btn-cv">CV</a></button></li>
         </ul>
     </header>
 
-    <main>
+    <div class="bg-img"><img class="background-image" src="./assets/img/Background-main.svg" alt=""></div>
+    <div><img class="color-overlay" src="./assets/img/Overlay.svg" alt=""></div>
+
+    <main class="main">
         <div>
+            <!--Effetto IA-->
             <canvas id="container" width="200" height="200"></canvas>
         </div>
 
         <div class="main-text">
             <h1 class="main-h1">Unstoppable thinker</h1>
-            <p>I'm a very precise person in everything I do, I worked in a web agency as a social media manager for a
-                couple of years and now I'm heading towards the programming scene because it attracted me a lot!</p>
+            <p><strong>I'm a very precise person in everything I do, I worked in a web agency as a social media manager for a couple of years and now I'm heading towards the programming scene because it attracted me a lot!</strong></p>
         </div>
     </main>
 
-    <div class="container-1">
-        <div><p>HTML adn CSS Skill</p></div>
-        <div class="progress-bar" style="--width: 10" data-label="80%"></div>
+    <h1 class="sub-title">My Skill</h1>
+
+    <!--Progress Bar-->
+    <div class="container-skills">
+        <div class="skill-box">
+            <span class="title">Creativity</span>
+
+            <div class="skill-bar">
+                <span class="skill-per creativity">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title">Problem Solving</span>
+
+            <div class="skill-bar">
+                <span class="skill-per problem-solving">
+                    <span class="tooltip">100%</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title">HTML</span>
+
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">CSS</span>
+
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
     </div>
-    
 
     <footer>
-        <!--Da Inserire!-->
+        <!--Need something here!-->
     </footer>
 </body>
 
-</html>
+</html>0
