@@ -18,7 +18,7 @@ body {
 }
 
 
-/* navbar */
+/* Navbar */
 header {
     padding: 0;
     display: flex;
@@ -58,7 +58,7 @@ a:visited {
 }
 
 
-/*Header Button*/
+/* Header Button */
 .btn-about-me {
     font-size: 18px;
     font-family: sans-serif;
@@ -145,7 +145,7 @@ a:visited {
 
 
 
-/*Header Logo*/
+/* Header Logo */
 .nav-logo {
     margin-top: 5px;
 }
@@ -154,7 +154,7 @@ a:visited {
     margin-left: 40px;
 }
 
-/*Image Background*/
+/* Image Background */
 .background-image {
     width: 100%;
     position: absolute;
@@ -180,7 +180,7 @@ a:visited {
 }
 
 
-/*Main*/
+/* Main */
 .main {
     display: flex;
     justify-content: space-evenly;
@@ -220,12 +220,12 @@ a:visited {
     right: 0;
 }
 
-/*Progresssbar*/
-
+/* Progresssbar */
 .sub-title {
     color: white;
     font-weight: 100;
     margin-top: 300px;
+    font-weight: 600;
 }
 
 .container-skills {
@@ -325,11 +325,65 @@ a:visited {
 }
 
 
-/*Footer*/
-
+/* Footer */
 footer {
     margin-top: auto;
+    background-color: #111;
     width: 100%;
+}
+
+.footerContainer {
     padding: 70px 30px 20px;
-    background-color: #7f7f7f;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #111;
+    opacity: 0.9;
+}
+
+/* Hover effect on social media icons */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5S;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
 }
