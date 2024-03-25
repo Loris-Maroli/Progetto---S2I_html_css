@@ -217,15 +217,6 @@ a:visited {
     margin-bottom: 20px;
 }
 
-.about-me-img>img {
-    display: flex;
-    position: static;
-    width: 220px;
-    height: 300px;
-    margin-top: -60px;
-    margin-left: -100px;
-}
-
 #container {
     width: 200px;
     height: 200px;
@@ -237,13 +228,28 @@ a:visited {
     right: 0;
 }
 
-/* Container */
+/* Container Portfolio */
 
-.container {
+.container-portfolio {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+}
+
+.my-work {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.my-work-1 {
+    padding: 40px;
+    margin: 40px 10px;
+}
+
+.my-work-img {
     width: 100%;
+    padding: 0 0 40px 0;
 }
 
 /* Progresssbar */
@@ -444,10 +450,6 @@ footer {
 
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
 
-}
-
-@media only screen and (min-width: 961px) {
-
-}
+@media only screen and (min-width: 961px) {}
