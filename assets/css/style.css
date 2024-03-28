@@ -185,12 +185,12 @@ a:visited {
 
 /* Image Background */
 .background-image {
-    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    max-width: 1028px;
     background-color: rgba(33, 33, 33, 0);
     z-index: -99;
 }
@@ -217,22 +217,19 @@ a:visited {
     margin-bottom: 20px;
 }
 
-#container {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    transform: rotate(45deg);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+/* Container About me */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 /* Container Portfolio */
-
 .container-portfolio {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 150px;
     color: white;
 }
 
@@ -437,7 +434,11 @@ footer {
     font-weight: 400;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
+    .background-image {
+        max-width: 300px;
+    }
+    
     .footerNav ul {
         flex-direction: column;
     }
@@ -450,6 +451,14 @@ footer {
 
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .background-image {
+        max-width: 960px;
+    }
+}
 
-@media only screen and (min-width: 961px) {}
+@media only screen and (min-width: 961px) {
+    .background-image {
+        width: 100%;
+    }
+}
