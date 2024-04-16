@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -14,10 +15,8 @@ body {
     width: 100%;
 
     font-size: 18px;
-    font-family: sans-serif;
     background-color: rgba(0, 0, 0, 0.684);
 }
-
 
 /* Navbar */
 header {
@@ -31,19 +30,19 @@ header {
     font-weight: 600;
 
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 22px 20px;
     background: #AF8F783b;
     color: white;
     box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.15);
 }
 
-header>ul>li>button>a {
+header ul li button a {
     text-decoration: none;
     cursor: pointer;
     color: white;
 }
 
-header>ul>li>button>a:link,
+header ul li button a:link,
 a:visited {
     color: white;
     text-decoration: none;
@@ -53,7 +52,7 @@ a:visited {
     margin-top: 15px;
 }
 
-.menu>li {
+.menu li {
     display: inline;
     margin-right: 100px;
 }
@@ -195,7 +194,7 @@ a:visited {
     max-height: 800px;
     max-width: 100%;
     background-color: rgba(33, 33, 33, 0);
-    z-index: -99;
+    z-index: -1;
 }
 
 /* Main */
@@ -222,7 +221,7 @@ a:visited {
 .main-aboutme {
     display: flex;
     justify-content: center;
-    text-align: center;   
+    text-align: center;
     align-items: center;
 
     color: white;
@@ -236,15 +235,6 @@ a:visited {
 
 .p-aboutme {
     padding: 50px;
-}
-
-/* Container About me */
-.container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: -100px;
-    margin-right: 150px;
 }
 
 /* Container Portfolio */
@@ -268,6 +258,117 @@ a:visited {
 .my-work-img {
     width: 100%;
     padding: 0 0 40px 0;
+}
+
+/*Form Contacts*/
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.contact-form form {
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-form form p {
+    color: #fff;
+    padding: 15px;
+}
+
+.contact-form form h1 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact-form form input {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.contact-form form input::placeholder {
+    color: #fff;
+}
+
+.contact-form form #lastName,
+.contact-form form #mobile {
+    margin-left: 20px;
+}
+
+.contact-form form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 620px;
+    max-width: 620px;
+}
+
+.contact-form form h4 {
+    font-size: 20px;
+}
+
+.contact-form form #button {
+    border: none;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #111;
+    width: 150px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.2s;
+}
+
+.contact-form form #button:hover {
+    background: #111;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+/*CV Loris*/
+.cv-loris {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px;
+}
+
+.cv-button {
+    margin: 0 0 60px 0;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.cv-img {
+    width: 80%;
 }
 
 /* Footer */
@@ -377,12 +478,15 @@ a:visited {
     .main {
         margin-top: 0;
     }
+
     .background-image {
         max-width: 300px;
     }
+
     .effetto-ia {
         display: none;
     }
+
     .footerNav ul {
         flex-direction: column;
     }
@@ -393,24 +497,33 @@ a:visited {
         margin: 10px;
     }
 
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     h1 {
         font-size: 20px;
     }
+
     p {
         font-size: 15px;
     }
+
     .main {
         margin-top: 100px;
         width: 100%;
         font-size: 15px;
         justify-content: center;
     }
+
     .background-image {
         max-width: 960px;
     }
+
     .effetto-ia {
         display: none;
     }
