@@ -265,7 +265,7 @@ a:visited {
     padding: 0 0 40px 0;
 }
 
-/*Form Contacts*/
+/* Form Contacts */
 .contact-form {
     display: flex;
     justify-content: center;
@@ -366,12 +366,6 @@ a:visited {
     margin: 60px;
 }
 
-.cv-button {
-    margin: 0 0 60px 0;
-    padding: 20px;
-    border-radius: 30px;
-}
-
 .cv-img {
     width: 80%;
 }
@@ -417,16 +411,22 @@ a:visited {
 
 .socialIcons a {
     text-decoration: none;
-    padding: 10px;
+    padding: 11px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
+    text-align: center;
 }
 
 .socialIcons a i {
     font-size: 2em;
     color: #111;
     opacity: 0.9;
+}
+
+.footer-sicon {
+    width: 65px;
+    height: 65px;
 }
 
 /* Hover effect on social media icons */
@@ -522,6 +522,20 @@ a:visited {
         margin: 10px;
     }
 
+    .socialIcons a {
+        text-decoration: none;
+        padding: 4px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .footer-sicon {
+        width: 50px;
+        height: 50px;
+    }
+
     .navbar{
         display: none;
     }
@@ -618,7 +632,114 @@ a:visited {
         max-height: 240px;
     }
 
+    .main-aboutme {
+        flex-direction: column;
+    }
 
+    .p-aboutme {
+        font-size: 18px;
+    }
+
+    .img-aboutme {
+        height: 250px;
+        width: 190px;
+    }
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 60px;
+    }
+    
+    .contact-form form {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    
+    .contact-form form p {
+        color: #fff;
+        padding: 15px;
+    }
+    
+    .contact-form form h1 {
+        color: #fff;
+        font-weight: 700;
+        line-height: 2;
+        margin-top: 20px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .contact-form form input {
+        width: 210px;
+        height: 50px;
+        padding-left: 5px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        margin: 10px;
+        background: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+    
+    .contact-form form input::placeholder {
+        color: #fff;
+    }
+    
+    .contact-form form #lastName,
+    .contact-form form #mobile {
+        margin-left: 20px;
+    }
+    
+    .contact-form form textarea {
+        background: none;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-weight: 200;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 150px;
+        outline: none;
+        min-height: 150px;
+        max-height: 150px;
+        min-width: 500px;
+        max-width: 500px;
+    }
+    
+    .contact-form form h4 {
+        font-size: 20px;
+    }
+    
+    .contact-form form #button {
+        border: none;
+        background: #fff;
+        border-radius: 50px;
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #111;
+        width: 150px;
+        height: 60px;
+        padding: 0;
+        margin-bottom: 30px;
+        transition: 0.2s;
+    }
+    
+    .contact-form form #button:hover {
+        background: #111;
+        color: #fff;
+        transition: .2s ease-in-out;
+    }
+
+    .cv-img {
+        width: 100%;
+    }
 }
 
 /* Tablet */
@@ -628,7 +749,7 @@ a:visited {
     }
 
     p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .main {
@@ -645,10 +766,26 @@ a:visited {
     .effetto-ia {
         width: 100px;
         height: 100px;
+        margin-bottom: 50px;
+        margin-top: 30px;
     }
 
     .my-work-1 {
         margin-top: 0;
+    }
+
+    .socialIcons a {
+        text-decoration: none;
+        padding: 8px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .footer-sicon {
+        width: 60px;
+        height: 60px;
     }
 
     .navbar{
@@ -746,14 +883,124 @@ a:visited {
     .mobile-navbar .menu-btn:checked ~ .menu{ 
         max-height: 240px;
     }
+
+    .p-aboutme {
+        font-size: 14px;
+    }
+
+    .img-aboutme {
+        height: 300px;
+        width: 300px;
+    }
+
+    .cv-img {
+        width: 100%;
+    }
 }
 
 /* Laptop */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar{
+        display: none;
+    }
 
-}
+    
+    .effetto-ia {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
 
-/* Dispositivi di grqandi dimensioni */
-@media only screen and (min-width: 992px) {
+    .mobile-navbar {
+        padding: 0;
+        display: block;
+        width: 100%;
 
+        font-size: 18px;
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+
+        background: #AF8F783b;
+        color: white;
+        box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.15);
+    }
+
+    .mobile-navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .mobile-navbar ul a{
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .mobile-navbar ul a:hover{
+        background-color: #494949aa;
+    }
+
+    .mobile-navbar .nav-logo{
+        float: left;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .mobile-navbar .menu{
+        clear: both;
+        margin-top: 0;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .mobile-navbar .menu li{
+        display: contents;
+        margin-right: 0;
+    }
+
+    .mobile-navbar .menu-icon{
+        padding: 40px 30px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+
+    .mobile-navbar .menu-icon .nav-icon{
+        background-color: white;
+        display: block;
+        width: 18px;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+    }
+
+   .mobile-navbar .menu-icon .nav-icon:before,
+   .mobile-navbar .menu-icon .nav-icon:after{
+        background-color: white;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        transition: all .2s ease-out;
+        position: absolute;
+    }
+
+    .mobile-navbar .menu-icon .nav-icon:after{
+        top: -5px;
+    }    
+    
+    .mobile-navbar .menu-icon .nav-icon:after{
+        top: -5px;
+    }
+
+    .mobile-navbar .menu-btn{
+        display: none;
+    }
+
+    .mobile-navbar .menu-btn:checked ~ .menu{ 
+        max-height: 240px;
+    }
 }
