@@ -34,15 +34,16 @@
     </header>
 
     <div class="contact-form">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
             <h1>Let's Talk!</h1>
             <p>Feel free to reach out if you want to collaborate, connect, or just have a chat.</p>
-            <input type="text" id="firstName" placeholder="First Name" required />
-            <input type="text" id="lastName" placeholder="Last Name" required />
-            <input type="email" id="email" placeholder="Email" required />
-            <input type="text" id="mobile" placeholder="Mobile" required />
-            <textarea required>Type Your Message Here...</textarea>
-            <input type="submit" value="Send" id="button" />
+            <input type="hidden" name="access_key" value="7c9b47d6-42ae-420a-a987-5ceeab527229">
+            <input name="text" type="text" id="firstName" placeholder="First Name" required />
+            <input name="text" type="text" id="lastName" placeholder="Last Name" required />
+            <input name="email" type="email" id="email" placeholder="Email" required />
+            <input name="text" type="text" id="mobile" placeholder="Mobile" required />
+            <textarea name="message">Type Your Message Here...</textarea>
+            <button type="submit" value="send" id="button" >Send</button>
         </form>
     </div>
 
