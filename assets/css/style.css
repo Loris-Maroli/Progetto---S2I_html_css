@@ -69,6 +69,7 @@ a:visited {
     font-weight: 600;
     text-decoration: none;
     padding: 33.2px;
+    padding-top: 37px;
 
     color: white;
     background-color: none;
@@ -97,6 +98,7 @@ a:visited {
     font-weight: 600;
     text-decoration: none;
     padding: 33.2px;
+    padding-top: 37px;
 
     color: white;
     background-color: none;
@@ -125,6 +127,7 @@ a:visited {
     font-weight: 600;
     text-decoration: none;
     padding: 33.2px;
+    padding-top: 37px;
 
     color: white;
     background-color: none;
@@ -153,6 +156,7 @@ a:visited {
     font-weight: 600;
     text-decoration: none;
     padding: 33.2px 50px;
+    padding-top: 37px;
 
     color: white;
     background-color: none;
@@ -411,22 +415,16 @@ a:visited {
 
 .socialIcons a {
     text-decoration: none;
-    padding: 11px;
+    padding: 7px 10px 7px 10px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
-    text-align: center;
 }
 
 .socialIcons a i {
     font-size: 2em;
     color: #111;
     opacity: 0.9;
-}
-
-.footer-sicon {
-    width: 65px;
-    height: 65px;
 }
 
 /* Hover effect on social media icons */
@@ -523,20 +521,6 @@ a:visited {
         width: 100%;
         text-align: center;
         margin: 10px;
-    }
-
-    .socialIcons a {
-        text-decoration: none;
-        padding: 4px;
-        background-color: white;
-        margin: 10px;
-        border-radius: 50%;
-        text-align: center;
-    }
-
-    .footer-sicon {
-        width: 50px;
-        height: 50px;
     }
 
     .navbar{
@@ -779,20 +763,6 @@ a:visited {
 
     .my-work-1 {
         margin-top: 0;
-    }
-
-    .socialIcons a {
-        text-decoration: none;
-        padding: 8px;
-        background-color: white;
-        margin: 10px;
-        border-radius: 50%;
-        text-align: center;
-    }
-
-    .footer-sicon {
-        width: 60px;
-        height: 60px;
     }
 
     .navbar{
