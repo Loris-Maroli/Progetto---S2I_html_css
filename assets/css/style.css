@@ -479,8 +479,12 @@ a:visited {
 
 /* Mobile Portrait */
 @media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 22px;
+    }
+
     p {
-        font-size: 16px;
+        font-size: 15px;
     }
     .main {
         margin-top: 50px;
@@ -490,7 +494,7 @@ a:visited {
     }
 
     .background-image {
-        height: 870px;
+        height: 840px;
     }
 
     .effetto-ia {
