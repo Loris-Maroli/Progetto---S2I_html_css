@@ -242,6 +242,7 @@ a:visited, a:active {
 .img-aboutme {
     max-width: 300px;
     border-radius: 150px;
+    border: none;
 }
 
 .p-aboutme {
@@ -636,6 +637,7 @@ a:visited, a:active {
         height: 250px;
         width: 190px;
         border-radius: 100px;
+        border: none;
     }
 
     .contact-form {
@@ -882,6 +884,7 @@ a:visited, a:active {
     .img-aboutme {
         height: 370px;
         width: 370px;
+        border: none;
     }
 
     .cv-img {
