@@ -639,10 +639,11 @@ a:visited, a:active {
 
     .contact-form {
         display: flex;
+
         justify-content: center;
         align-items: center;
         margin: 60px;
-        width: 100%;
+        width: 70%;
         height: 100%;
     }
     
@@ -702,8 +703,8 @@ a:visited, a:active {
         outline: none;
         min-height: 150px;
         max-height: 150px;
-        min-width: 400px;
-        max-width: 400px;
+        min-width: 350px;
+        max-width: 70%;
     }
     
     .contact-form form h4 {
