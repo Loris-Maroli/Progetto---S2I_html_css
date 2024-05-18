@@ -20,6 +20,11 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
     padding: 0;
