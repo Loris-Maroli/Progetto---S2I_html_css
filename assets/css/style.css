@@ -378,12 +378,53 @@ a:visited, a:active {
     transition: .2s ease-in-out;
 }
 
-/*CV Loris*/
-.cv-loris {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 60px;
+/* CV Loris */
+.cv {
+    color: white;
+    max-width: 800px;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-cv {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-cv h1 {
+    padding-bottom: 15px;
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #af8f7896;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.job, .school {
+    margin-bottom: 15px;
+}
+
+.job p {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 0;
+    color: #af8f78;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 .download-btn {
