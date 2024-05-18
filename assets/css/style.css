@@ -585,7 +585,7 @@ ul {
     }
 
     .main-text {
-        width:70%;
+        width: 70%;
     }
 
     .background-image {
@@ -830,7 +830,8 @@ ul {
     }
 
     .cv {
-        margin-top: 0;
+        margin: 0;
+        padding-bottom: 40px;
     }
 
     .header-cv {
@@ -999,7 +1000,8 @@ ul {
     }
 
     .cv {
-        margin-top: 0;
+        margin: 0;
+        padding-bottom: 40px;
     }
 }
 
@@ -1139,7 +1141,7 @@ ul {
     }
 
     .cv {
-        margin-top: 0;
+        margin-top: 40px;
     }
 }
 
