@@ -50,7 +50,8 @@ a {
 }
 
 .navbar ul li button a:link,
-a:visited, a:active {
+a:visited,
+a:active {
     color: white;
     text-decoration: none;
 }
@@ -64,7 +65,7 @@ a:visited, a:active {
     margin-right: 100px;
 }
 
-.mobile-navbar{
+.mobile-navbar {
     display: none;
 }
 
@@ -385,9 +386,28 @@ a:visited, a:active {
     margin-top: 40px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .header-cv {
+    display: flex;
+    align-items: center;
+}
+
+.header-cv h1 {
+    margin: 0;
+}
+
+.img-cv {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.cv-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -406,15 +426,29 @@ section {
 h2 {
     border-bottom: 2px solid #af8f7896;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
 }
 
-.job, .school {
+.job,
+.school,
+.type-of-skills {
     margin-bottom: 15px;
 }
 
 .job p {
     margin-bottom: 10px;
+}
+
+.passions h3 {
+    margin-bottom: 5px;
+}
+
+.passions p {
+    max-width: 700px;
+}
+
+h2 {
+    margin-top: 20px;
 }
 
 h3 {
@@ -429,19 +463,19 @@ ul {
 
 .download-btn {
     padding: 20px 30px;
-    margin: 0 0 50px 0;
-    background-color: white; 
-    color: black; 
-    border: none; 
-    border-radius: 20px; 
-    cursor: pointer; 
+    margin: 25px 0 50px 0;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
     font-weight: 600;
     font-size: 18px;
-  }
-  
-  .download-btn:hover {
-    background-color: #bab9b9; 
-  }
+}
+
+.download-btn:hover {
+    background-color: #bab9b9;
+}
 
 .cv-img {
     width: 100%;
@@ -541,6 +575,7 @@ ul {
     p {
         font-size: 16px;
     }
+
     .main {
         margin-top: 50px;
         flex-direction: column;
@@ -582,7 +617,7 @@ ul {
         margin: 10px;
     }
 
-    .navbar{
+    .navbar {
         display: none;
     }
 
@@ -607,23 +642,23 @@ ul {
         overflow: hidden;
     }
 
-    .mobile-navbar ul a{
+    .mobile-navbar ul a {
         display: block;
         padding: 20px;
         text-decoration: none;
     }
 
-    .mobile-navbar ul a:hover{
+    .mobile-navbar ul a:hover {
         background-color: #494949aa;
     }
 
-    .mobile-navbar .nav-logo{
+    .mobile-navbar .nav-logo {
         float: left;
         padding: 10px 20px;
         text-decoration: none;
     }
 
-    .mobile-navbar .menu{
+    .mobile-navbar .menu {
         z-index: 1;
         clear: both;
         margin-top: 0;
@@ -631,19 +666,19 @@ ul {
         transition: max-height 0.7s ease-out;
     }
 
-    .mobile-navbar .menu li{
+    .mobile-navbar .menu li {
         display: contents;
         margin-right: 0;
     }
 
-    .mobile-navbar .menu-icon{
+    .mobile-navbar .menu-icon {
         padding: 40px 30px;
         position: relative;
         float: right;
         cursor: pointer;
     }
 
-    .mobile-navbar .menu-icon .nav-icon{
+    .mobile-navbar .menu-icon .nav-icon {
         background-color: white;
         display: block;
         width: 18px;
@@ -652,8 +687,8 @@ ul {
         transition: background-color .2s ease-out;
     }
 
-   .mobile-navbar .menu-icon .nav-icon:before,
-   .mobile-navbar .menu-icon .nav-icon:after{
+    .mobile-navbar .menu-icon .nav-icon:before,
+    .mobile-navbar .menu-icon .nav-icon:after {
         background-color: white;
         content: "";
         display: block;
@@ -663,19 +698,19 @@ ul {
         position: absolute;
     }
 
-    .mobile-navbar .menu-icon .nav-icon:after{
-        top: -5px;
-    }    
-    
-    .mobile-navbar .menu-icon .nav-icon:after{
+    .mobile-navbar .menu-icon .nav-icon:after {
         top: -5px;
     }
 
-    .mobile-navbar .menu-btn{
+    .mobile-navbar .menu-icon .nav-icon:after {
+        top: -5px;
+    }
+
+    .mobile-navbar .menu-btn {
         display: none;
     }
 
-    .mobile-navbar .menu-btn:checked ~ .menu{ 
+    .mobile-navbar .menu-btn:checked~.menu {
         max-height: 1000px;
     }
 
@@ -703,7 +738,7 @@ ul {
         width: 70%;
         height: 100%;
     }
-    
+
     .contact-form form {
         width: 100%;
         height: 100%;
@@ -711,12 +746,12 @@ ul {
         justify-content: center;
         border-radius: 15px;
     }
-    
+
     .contact-form form p {
         color: #fff;
         padding: 15px;
     }
-    
+
     .contact-form form h1 {
         color: #fff;
         font-weight: 700;
@@ -725,7 +760,7 @@ ul {
         width: 300px;
         text-align: center;
     }
-    
+
     .contact-form form input {
         width: 210px;
         height: 50px;
@@ -738,16 +773,16 @@ ul {
         border-bottom: 2px solid #fff;
         color: #fff;
     }
-    
+
     .contact-form form input::placeholder {
         color: #fff;
     }
-    
+
     .contact-form form #lastName,
     .contact-form form #mobile {
         margin-left: 20px;
     }
-    
+
     .contact-form form textarea {
         background: none;
         border: none;
@@ -763,11 +798,11 @@ ul {
         min-width: 350px;
         max-width: 70%;
     }
-    
+
     .contact-form form h4 {
         font-size: 20px;
     }
-    
+
     .contact-form form #button {
         border: none;
         background: #fff;
@@ -782,15 +817,15 @@ ul {
         margin-bottom: 30px;
         transition: 0.2s;
     }
-    
+
     .contact-form form #button:hover {
         background: #111;
         color: #fff;
         transition: .2s ease-in-out;
     }
 
-    .cv-img {
-        width: 90%;
+    .header-cv {
+        flex-direction: column;
     }
 
     .download-btn {
@@ -800,7 +835,7 @@ ul {
 }
 
 /* Tablet */
-@media only screen and (min-width: 576px) and (max-width: 768px) { 
+@media only screen and (min-width: 576px) and (max-width: 768px) {
     h1 {
         font-size: 24px;
     }
@@ -835,7 +870,7 @@ ul {
         margin-top: 0;
     }
 
-    .navbar{
+    .navbar {
         display: none;
     }
 
@@ -860,42 +895,42 @@ ul {
         overflow: hidden;
     }
 
-    .mobile-navbar ul a{
+    .mobile-navbar ul a {
         display: block;
         padding: 20px;
         text-decoration: none;
     }
 
-    .mobile-navbar ul a:hover{
+    .mobile-navbar ul a:hover {
         background-color: #494949aa;
     }
 
-    .mobile-navbar .nav-logo{
+    .mobile-navbar .nav-logo {
         float: left;
         padding: 10px 20px;
         text-decoration: none;
     }
 
-    .mobile-navbar .menu{
+    .mobile-navbar .menu {
         clear: both;
         margin-top: 0;
         max-height: 0;
         transition: max-height .7s ease-out;
     }
 
-    .mobile-navbar .menu li{
+    .mobile-navbar .menu li {
         display: contents;
         margin-right: 0;
     }
 
-    .mobile-navbar .menu-icon{
+    .mobile-navbar .menu-icon {
         padding: 40px 30px;
         position: relative;
         float: right;
         cursor: pointer;
     }
 
-    .mobile-navbar .menu-icon .nav-icon{
+    .mobile-navbar .menu-icon .nav-icon {
         background-color: white;
         display: block;
         width: 18px;
@@ -904,8 +939,8 @@ ul {
         transition: background-color .2s ease-out;
     }
 
-   .mobile-navbar .menu-icon .nav-icon:before,
-   .mobile-navbar .menu-icon .nav-icon:after{
+    .mobile-navbar .menu-icon .nav-icon:before,
+    .mobile-navbar .menu-icon .nav-icon:after {
         background-color: white;
         content: "";
         display: block;
@@ -915,19 +950,19 @@ ul {
         position: absolute;
     }
 
-    .mobile-navbar .menu-icon .nav-icon:after{
-        top: -5px;
-    }    
-    
-    .mobile-navbar .menu-icon .nav-icon:after{
+    .mobile-navbar .menu-icon .nav-icon:after {
         top: -5px;
     }
 
-    .mobile-navbar .menu-btn{
+    .mobile-navbar .menu-icon .nav-icon:after {
+        top: -5px;
+    }
+
+    .mobile-navbar .menu-btn {
         display: none;
     }
 
-    .mobile-navbar .menu-btn:checked ~ .menu{ 
+    .mobile-navbar .menu-btn:checked~.menu {
         max-height: 1000px;
     }
 
@@ -954,10 +989,10 @@ ul {
 
 /* Laptop */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .navbar{
+    .navbar {
         display: none;
     }
-    
+
     .container-portfolio {
         margin-top: 60px;
     }
@@ -978,7 +1013,7 @@ ul {
     .main {
         margin-bottom: 140px;
     }
-    
+
     .effetto-ia {
         width: 150px;
         height: 150px;
@@ -1007,42 +1042,42 @@ ul {
         overflow: hidden;
     }
 
-    .mobile-navbar ul a{
+    .mobile-navbar ul a {
         display: block;
         padding: 20px;
         text-decoration: none;
     }
 
-    .mobile-navbar ul a:hover{
+    .mobile-navbar ul a:hover {
         background-color: #494949aa;
     }
 
-    .mobile-navbar .nav-logo{
+    .mobile-navbar .nav-logo {
         float: left;
         padding: 10px 20px;
         text-decoration: none;
     }
 
-    .mobile-navbar .menu{
+    .mobile-navbar .menu {
         clear: both;
         margin-top: 0;
         max-height: 0;
         transition: max-height 0.2s ease-out;
     }
 
-    .mobile-navbar .menu li{
+    .mobile-navbar .menu li {
         display: contents;
         margin-right: 0;
     }
 
-    .mobile-navbar .menu-icon{
+    .mobile-navbar .menu-icon {
         padding: 40px 30px;
         position: relative;
         float: right;
         cursor: pointer;
     }
 
-    .mobile-navbar .menu-icon .nav-icon{
+    .mobile-navbar .menu-icon .nav-icon {
         background-color: white;
         display: block;
         width: 18px;
@@ -1051,8 +1086,8 @@ ul {
         transition: background-color .2s ease-out;
     }
 
-   .mobile-navbar .menu-icon .nav-icon:before,
-   .mobile-navbar .menu-icon .nav-icon:after{
+    .mobile-navbar .menu-icon .nav-icon:before,
+    .mobile-navbar .menu-icon .nav-icon:after {
         background-color: white;
         content: "";
         display: block;
@@ -1062,19 +1097,19 @@ ul {
         position: absolute;
     }
 
-    .mobile-navbar .menu-icon .nav-icon:after{
-        top: -5px;
-    }    
-    
-    .mobile-navbar .menu-icon .nav-icon:after{
+    .mobile-navbar .menu-icon .nav-icon:after {
         top: -5px;
     }
 
-    .mobile-navbar .menu-btn{
+    .mobile-navbar .menu-icon .nav-icon:after {
+        top: -5px;
+    }
+
+    .mobile-navbar .menu-btn {
         display: none;
     }
 
-    .mobile-navbar .menu-btn:checked ~ .menu{ 
+    .mobile-navbar .menu-btn:checked~.menu {
         max-height: 1000px;
     }
 
