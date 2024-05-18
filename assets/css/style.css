@@ -383,7 +383,7 @@ a:active {
 .cv {
     color: white;
     max-width: 800px;
-    margin-top: 40px;
+    margin: 50px 0 50px 0;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -392,10 +392,6 @@ a:active {
 .header-cv {
     display: flex;
     align-items: center;
-}
-
-.header-cv h1 {
-    margin: 0;
 }
 
 .img-cv {
@@ -423,7 +419,7 @@ section {
     margin-bottom: 20px;
 }
 
-h2 {
+.h2-cv {
     border-bottom: 2px solid #af8f7896;
     padding-bottom: 5px;
     margin: 20px 0 10px 0;
@@ -461,9 +457,13 @@ ul {
     margin-left: 20px;
 }
 
+.download-pdf {
+    text-align: center;
+}
+
 .download-btn {
     padding: 20px 30px;
-    margin: 25px 0 50px 0;
+    margin: 25px 0 10px 0;
     background-color: white;
     color: black;
     border: none;
@@ -581,6 +581,10 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .main-text {
+        width:70%;
     }
 
     .background-image {
@@ -791,7 +795,7 @@ ul {
         font-weight: 200;
         font-size: 20px;
         padding: 10px;
-        margin-top: 150px;
+        margin-top: 50px;
         outline: none;
         min-height: 150px;
         max-height: 150px;
@@ -822,6 +826,10 @@ ul {
         background: #111;
         color: #fff;
         transition: .2s ease-in-out;
+    }
+
+    .cv {
+        margin-top: 0;
     }
 
     .header-cv {
@@ -985,6 +993,9 @@ ul {
         font-size: 15px;
     }
 
+    .cv {
+        margin-top: 0;
+    }
 }
 
 /* Laptop */
@@ -1120,6 +1131,10 @@ ul {
     .download-btn {
         padding: 15px 20px;
         font-size: 15px;
+    }
+
+    .cv {
+        margin-top: 0;
     }
 }
 
