@@ -2,7 +2,7 @@
 // Effetto IA
 
 var points = [],
-    velocity2 = 10, // velocity squared
+    velocity2 = 0, // velocity squared
     canvas =
         document.getElementById('container'),
     context = canvas.getContext('2d'),
